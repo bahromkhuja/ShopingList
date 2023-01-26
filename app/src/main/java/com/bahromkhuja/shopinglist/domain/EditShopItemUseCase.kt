@@ -1,7 +1,7 @@
 package com.bahromkhuja.shopinglist.domain
 
-class EditShopItemUseCase {
+class EditShopItemUseCase(private val shopListRepository: ShopListRepository) {
     fun editShopItem(shopItem: ShopItem){
-
+        shopListRepository.editShopItem(shopItem)
     }
 }

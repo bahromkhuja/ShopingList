@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.shopList.observe(this){
             Log.e("TestTag", it.toString())
         }
-        viewModel.getShopList()
         viewModel.changeEnabledState(ShopItem(name="Name 0", count=0, enabled=false, id=0))
+        viewModel.deleteItem(ShopItem(name="Name 1", count=1, enabled=false, id=1))
     }
 }
